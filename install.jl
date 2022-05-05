@@ -7,7 +7,7 @@ if Sys.iswindows()
 else
     path = pwd()
 end
-success = WorkshopWizard.install(;repo="https://github.com/mfherbst/2022-rwth-julia-workshop",
+success = WorkshopWizard.install(;repo="https://github.com/mtowara/2022-rwth-julia-workshop",
                                   path,
                                   global_IJulia=true,
                                   auto_overwrite=false)
