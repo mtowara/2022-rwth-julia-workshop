@@ -5,7 +5,7 @@ using WorkshopWizard
 if Sys.iswindows()
     path = joinpath(homedir(), "Desktop")
 else
-    path = homedir()
+    path = pwd()
 end
 success = WorkshopWizard.install(;repo="https://github.com/mfherbst/2022-rwth-julia-workshop",
                                   path,
