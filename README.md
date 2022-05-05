@@ -22,7 +22,7 @@ copy and paste the following:
 
 ```julia
 import Downloads
-script = Downloads.download("https://raw.githubusercontent.com/mfherbst/2022-rwth-julia-workshop/master/install.jl")
+script = Downloads.download("https://raw.githubusercontent.com/mtowara/2022-rwth-julia-workshop/master/install.jl")
 include(script)
 ```
 This [downloads the install.jl script](https://raw.githubusercontent.com/mtowara/2022-rwth-julia-workshop/master/install.jl)
