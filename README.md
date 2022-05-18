@@ -52,6 +52,10 @@ If your Firefox is a Snap package it can not load files from your local disk and
 Just cat the file it tried to load, e.g.
 $HOME/.local/share/jupyter/runtime/nbserver-10397-open.html and look for a link which looks like this: http://localhost:8888/tree?token=cac0de6bc316a20e383bc29ff49e67451ad9b9fa004fd996
 Copy this link into Firefox and Jupyter should load.
+Can also be hacked away by changing use_redirect_file in .julia/conda/3/lib/python3.9/site-packages/notebook/notebookapp.py to False:
+```
+use_redirect_file = Bool(False, config=True)
+```
 
 ### Troubleshooting
 If you are facing issues, check out
@@ -62,3 +66,6 @@ from the WorkshopWizard package by Carsten Bauer (which `install.jl` is using).
 There is a section in the [00_Installation](00_Installation.ipynb) notebook
 with a few quick commands to check everything works as expected.
 Please run these **before the course**.
+
+### Cleanup ###
+If you are not a convert after this, just delete the .julia folder in your home directory :)
