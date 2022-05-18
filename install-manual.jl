@@ -6,4 +6,5 @@ flush(stdout)
 Pkg.instantiate()
 Pkg.precompile()
 
-println("Done!")
+path = pwd()
+@info "That's it. Start the notebook server with 'using IJulia; notebook(dir=\"$path")' ..."
