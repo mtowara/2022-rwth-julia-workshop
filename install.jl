@@ -13,5 +13,6 @@ success = WorkshopWizard.install(;repo="https://github.com/mtowara/2022-rwth-jul
                                   auto_overwrite=false)
 
 if success
-    @info "That's it. Start the notebook server with 'using IJulia; notebook(dir=\"$path/2022-rwth-julia-workshop\")' ..."
+    println("Installation done, starting IJulia server")
+    using IJulia; notebook(dir="$path/2022-rwth-julia-workshop") # starts IJulia sever
 end
