@@ -6,4 +6,4 @@ flush(stdout)
 Pkg.instantiate()
 Pkg.precompile()
 
-using IJulia; notebook() # starts IJulia sever
+using IJulia; notebook(dir=pwd()) # starts IJulia sever
