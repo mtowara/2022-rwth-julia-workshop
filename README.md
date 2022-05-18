@@ -34,6 +34,24 @@ git clone https://github.com/mtowara/2022-rwth-julia-workshop
 cd 2022-rwth-julia-workshop
 julia install-manual.jl
 ```
+If you want to restart the IJulia server at a later time, just re-run one of the installers or execute within the REPL:
+```
+cd 2022-rwth-julia-workshop
+julia --project
+julia> using IJulia; notebook()
+```
+
+If you want to start a REPL with the installed packages (they are not exported to the global Julia environment) start julia with the `--project` argument
+```
+cd 2022-rwth-julia-workshop
+julia --project
+```
+
+### Firefox on recent Ubuntu
+If your Firefox is a Snap package it can not load files from your local disk and you might get an "Access to the file was denied" error on startup of the Jupyter notebook.
+Just cat the file it tried to load, e.g.
+$HOME/.local/share/jupyter/runtime/nbserver-10397-open.html and look for a link which looks like this: http://localhost:8888/tree?token=cac0de6bc316a20e383bc29ff49e67451ad9b9fa004fd996
+Copy this link into Firefox and Jupyter should load.
 
 ### Troubleshooting
 If you are facing issues, check out
