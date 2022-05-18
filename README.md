@@ -68,4 +68,4 @@ with a few quick commands to check everything works as expected.
 Please run these **before the course**.
 
 ### Cleanup ###
-If you are not a convert after this, just delete the .julia folder in your home directory :)
+If you are not a convert after this, just delete the .julia folder (and potentially .jupyter and .local/share/jupyter if you don't use jupyter anywhere else) in your home directory :)
