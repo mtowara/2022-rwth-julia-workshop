@@ -38,7 +38,7 @@ If you want to restart the IJulia server at a later time, just re-run one of the
 ```
 cd 2022-rwth-julia-workshop
 julia --project
-julia> using IJulia; notebook()
+julia> using IJulia; notebook(pwd())
 ```
 
 If you want to start a REPL with the installed packages (they are not exported to the global Julia environment) start julia with the `--project` argument
