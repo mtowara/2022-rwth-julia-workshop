@@ -1,6 +1,7 @@
 # Introduction to the Julia programming language
 
 Material for the RWTH Julia workshop taking place on 17th and 18th February 2022, adapted for STCE retreat May 20th.
+Adapted from [Michael Herbst's course](https://github.com/mfherbst/2022-rwth-julia-workshop).
 
 ## Software and material
 What you need for the workshop (quick overview):
@@ -11,6 +12,7 @@ What you need for the workshop (quick overview):
 ### Getting Julia
 For following the course you will need at least **Julia 1.7**.
 Julia can be easily obtained in binary form from [Julia downloads](https://julialang.org/downloads/).
+On some Ubuntus apt-get install julia works as well (it does not yet for 22.04)
 
 ### Getting all the rest
 To get the remaining files and dependencies
